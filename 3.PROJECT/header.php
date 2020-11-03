@@ -30,7 +30,7 @@
                         </li>
                         <li>|</li>
                         <li>
-                            <a href="http://cse.tlu.edu.vn/Register?returnurl=http%3a%2f%2fcse.tlu.edu.vn%2f" class="text-white"> Register</a>
+                            <a href="register.php" class="text-white"> Register</a>
                         </li>
                         <li>|</li>
                         
