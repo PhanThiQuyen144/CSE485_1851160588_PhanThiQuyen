@@ -15,16 +15,16 @@
 </head>
 <body id="bd" class="wide fs3">
 
-<div id="ja-wrapper">
+	<div id="ja-wrapper">
 
 <!-- BEGIN: HEADER -->
-<div id="ja-header" class="clearfix" style="height: 100px;">
-	<h1 class="logo">
-		<a href="../3.PROJECT/CSE.php" title="">
-			<img src="../3.PROJECT/images/logo.jpg" alt="">
-		</a>
-	</h1>
-</div>
+	<div id="ja-header" class="clearfix" style="height: 100px;">
+		<h1 class="logo">
+			<a href="../3.PROJECT/CSE.php" title="">
+				<img src="../3.PROJECT/images/logo.jpg" alt="">
+			</a>
+		</h1>
+	</div>
 
 <!-- END: HEADER -->
 
@@ -37,7 +37,7 @@
 			<li class=""><a href="dshocvien.html" class="menu-item2" id="menu83" title="FAQs"><span class="menu-title">QL Học viên</span></a></li> 
 			<li class=""><a href="lapdanhsachthi.html" class="menu-item3" id="menu85" title="Forums"><span class="menu-title">QL Thi</span></a></li> 
 			<li class=""><a href="thongke.html" id="menu86" title="Documentation (Beta)"><span class="menu-title">Thống kê</span></a></li>  -->
-			<li class="active"><a href="hethong.html" class="active" id="menu86 active first-item" title="Documentation (Beta)"><span class="menu-title">Hệ thống</span></a></li> 
+			<li class="active"><a href="hethong.php" class="active" id="menu86 active first-item" title="Documentation (Beta)"><span class="menu-title">Hệ thống</span></a></li> 
 			<li class=""><a href="#" id="menu86" title="Documentation (Beta)"><span class="menu-title">Đăng xuất</span></a></li> 
 		</ul>
 	</div>
@@ -88,21 +88,38 @@
 							<td width="100">Tên đăng nhập</td>
 							<td width="150">Họ tên</td>													
 							<td width="150">Email</td>
-							<td width="70">SĐT</td>
+							<!-- <td width="70">SĐT</td> -->
 							<td width="100">Nhóm quyền</td>	
 							
 						</tr>
 						<tr>
-							<td width="10"><input type="checkbox"></td>
-							<td><a href="suauser.html"><img src="images/edit.gif" border="0"></a></td>
-							<td><a href="#"><img src="images/deleted.jpg" border="0"></a></td>
-							<td >admin</td>
-							<td >Phan Thị Quyên</td>
-							<td>1851160588@e.tlu.edu.vn</td>
-							<td>09759755555</td>
+					<?php	 
+							 $host = 'localhost';
+    						$user = 'root';
+    						$pass = '';
+    						$db   = 'cse';
+    						$conn = mysqli_connect($host,$user,$pass, $db);
+    						if(!$conn){
+        					die("Không thể kết nối");
+							}
+                      		$sql = "SELECT * FROM cse";
+                      		mysqli_set_charset($conn,'UTF8');
+                      		$result = mysqli_query($conn,$sql);
+                      // 3. Xu ly ket qua
+                      while($row = mysqli_fetch_assoc($result)){ ?>
+							<td width="10"><input type="checkbox" value="<?php  echo $row['id'] ?>"></td>
+							<td><a href="edit.php?id=<?php echo $row["id"]?>"><img src="../3.PROJECT/images/edit.gif" alt=""></a></td>
+							<td><a href="delete.php?id=<?php echo $row["id"] ?>"><img src="../3.PROJECT/images/deleted.jpg" alt=""></a></td>
+							<td ><?php  echo $row['username']?></td>
+							<td ><?php  echo $row['displayname']?></td>
+							<td><?php  echo $row['email']?></td>
+							<!-- <td>09759755555</td> -->
 							<td>admin</td>
 						</tr>
-						<tr>
+						<?php
+						}
+						?>
+						<!-- <tr>
 							<td width="10"><input type="checkbox"></td>
 							<td><a href="suauser.html"><img src="images/edit.gif" border="0"></a></td>
 							<td><a href="#"><img src="images/deleted.jpg" border="0"></a></td>
@@ -111,12 +128,12 @@
 							<td>1851160589@e.tlu.edu.vn</td>
 							<td>09759755555</td>
 							<td>admin</td>
-						</tr>
+						</tr> -->
 						
 					</table>
-					<div class="task"><a href="themuser.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>
-									<input type="button" name="Xóa" value="Xóa"> 
-									<a href="suauser.html"><input type="button" name="Cập nhật" value="Cập nhật"></a>
+					<div class="task"><a href="../3.PROJECT/register.php"><input type="button" value="Thêm mới" name="Thêm mới"></a>
+									<!-- <a href="delete.php?id=<?php echo $row["id"]?>"> <input type="button" name="Xóa" value="Xóa"> </a> 
+									<a href="edit.php?id=<?php echo $row["id"]?>"><input type="button" name="Cập nhật" value="Cập nhật"></a> -->
 					</div>
 			    </div>
 <!-- END: CONTENT -->
@@ -156,6 +173,10 @@
 
 </div>
 
+	<script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	 <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
 
-
-</body></html>
+</body>
+</html>

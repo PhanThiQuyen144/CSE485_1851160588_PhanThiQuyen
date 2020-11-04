@@ -45,7 +45,10 @@ try {
         mysqli_stmt_bind_param($q, 'ssss', $first_name, $last_name, $email, $hashed_passcode);
      // execute query
         mysqli_stmt_execute($q);
-        if (mysqli_stmt_affected_rows($q) == 1) {	// One record inserted	#11				
+		if (mysqli_stmt_affected_rows($q) == 1) {	// One record inserted	#11		
+			// quyen them vao 
+			header( 'location: Login.php');	
+			// quyen them vao
 		echo "bạn đã đăng kí thành công";
 		exit();
 		} else { // If it did not run OK.
