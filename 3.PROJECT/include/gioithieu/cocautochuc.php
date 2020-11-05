@@ -33,114 +33,28 @@
                             </div>
                             <p style="margin-top: 3%;"><b>* Ban chủ nhiệm khoa</b></p>
                             <div class="col-md-12">
-                                <img src="../../images/avar1.jpg" alt="">
-                                <p>- Trưởng khoa: PGS. TS. <a href="">Nguyễn Thanh Tùng</a></p>
-                                <p>Email: tungnt@tlu.edu.vn     Điện thoại: +84-4-38521442</p>
-                                <p>PGS. TS. Nguyễn Thanh Tùng – Trưởng Khoa, phụ trách chung và trực tiếp phụ trách các công tác:</p>
-                                <p>1.     Tổ chức, nhân sự <br>
-                                    2.     Các Hội đồng (Khoa học, Tư vấn, ...) <br>
-                                    3.     Chiến lược phát triển, kế hoạch <br>
-                                    4.     Nghiên cứu và phát triển chương trình đào tạo, chương trình liên kết với nước ngoài <br>
-                                    5.     Công tác thi đua, khen thưởng, kỷ luật <br>
-                                    6.     Phát triển thương hiệu Khoa, quản lý thông tin Website, trang facebook của Khoa</p>
+                                <?php 
+                                require("config.php");
+                                $sql = "SELECT * FROM cocautochuc";
+                                mysqli_set_charset($conn,'UTF8');
+                                $result = mysqli_query($conn,$sql);
+                                // 3. Xu ly ket qua
+                                while($row = mysqli_fetch_assoc($result)){ ?>
+                                   <div class="col-md-6">
+                                        <img src="<?php echo $row['image'] ?> " alt="" class ="img-fluid">
+                                   </div>
+                                   <p><b><?php  echo $row['position'] ?> </b><a href="<?php  echo $row['infor'] ?>"><?php  echo $row['name'] ?></a></p>
+                                  <pre style="overflow-x: hidden;">
+                                    <?php echo  $row['content']?>
+                                  </pre>
+                                <?php 
+                                }
+                                ?>
+
+                                
                             </div>
-                            <div class="col-md-12">
-                                 <img src="../../images/Copy of Dang Thu Hien.jpg" alt="">
-                                 <p>- Phó trưởng khoa: TS. GVC. <a href="http://cse.tlu.edu.vn/bo-mon-trung-tam/he-thong-thong-tin/doi-ngu-giang-vien-httt/userid/42/dang-thi-thu-hien-ts">Đặng Thị Thu Hiền</a></p>
-                                 <p> Email: hiendt@tlu.edu.vn</p>
-                                 <p>TS. GVC. Đặng Thị Thu Hiền - Phó trưởng Khoa, phụ trách <b>NCKH, Hợp tác quốc tế và công tác sinh viên</b>, phụ trách trực tiếp các mặt công tác:</p>
-                                 <p>
-                                     1.      Công tác sinh viên NCKH, Olympic sinh viên <br>
-                                     2.      Hợp tác quốc tế <br>
-                                     3.      Phát triển quan hệ doanh nghiệp, cố vấn học tập và tư vấn ngành nghề <br>
-                                     4.      Công tác tuyển sinh <br>
-                                     5.      Công tác thư viện, giáo trình <br>
-                                     6.      Công tác đoàn, hội sinh viên, công tác cựu sinh viên
-                                 </p>
-                            </div>
-                            <div class="col-md-12">
-                                <img src="../../images/Nguyen Huu Quynh.jpg" alt="">
-                                <p>- Phó trưởng khoa: PGS. TS.  Nguyễn Hữu Quỳnh</p>
-                                <p>Email: quynhnh@tlu.edu.vn</p>
-                                <p>PGS. TS. Nguyễn Hữu Quỳnh – Giám đốc Trung tâm Tin học kiêm Phó trưởng Khoa,
-                                     phụ trách <b>Đào tạo và đảm bảo chất lượng</b>, phụ trách trực tiếp các mặt công tác:</p>
-                                <p>1.      Đào tạo Đại học, Thạc sỹ và Tiến sỹ <br>
-                                    2.      Kiểm định chất lượng <br>
-                                    3.      Công tác đào tạo và học tập trực tuyến <br>
-                                    4.      Quản trị cơ sở vật chất, thiết bị</p>
-                            </div>
-                            <div class="col-md-12">
-                                <table>
-                                    <tr>
-                                        <td rowspan="2">*Văn phòng khoa</td>
-                                         <td style="padding-left: 2%;">  ThS. Nguyễn Thị Thu Hương</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                       
-                                        <td style="padding-left: 2%;">KS. Nguyễn Khánh Linhh</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-md-12" style="margin-top:5%">
-                                <b>* Khối các đơn vị giảng dạy</b> <br>
-                                 <table>
-                                     <tr>
-                                         <td> <a href="">- Bộ môn Công nghệ phần mềm	 </a>   </td>
-                                         <td>	Trưởng BM - TS. Lý Anh Tuấn </td>
-                                     </tr> 
-                                     <tr width="100%">
-                                        <td><a href="">- Bộ môn Hệ thống thông tin	</a>    </td> 
-                                         <td>Trưởng BM - TS.GVC Đặng Thị Thu Hiền</td>
-                                     </tr>
-                                     <tr>
-                                         <td><a href="">- Bộ môn Khoa học máy tính</a></td>
-                                          <td>	Phụ trách BM - TS. GVCC Nguyễn Huy Đức</td>
-                                     </tr>
-                                     <tr>
-                                         <td><a href=""> - Bộ môn Kỹ thuật máy tính và Mạng</a> </td>
-                                          <td>P. Trưởng BM -  ThS. Phạm Thanh Bình</td>
-                                     </tr>
-                                     <tr>
-                                        <td><a href="">- Bộ môn Tin học và Kỹ thuật tính toán	</a> </td>
-                                        <td>Trưởng BM - TS. Nguyễn Quỳnh Diệp</td>
-                                     </tr>
-                                      <tr>
-                                         <td><a href="">  - Bộ môn Toán học</a> </td>
-                                         <td>	Trưởng BM- TS. Nguyễn Hữu Thọ</td>
-                                     </tr>
-                                 </table>  
-                            </div>
-                            <div class="col-md-12" style="margin-top:5%">
-                                <b>* Khối tổ chức đoàn thể</b>
-                                <table>
-                                    <tr>
-                                        <td>- Đảng bộ bộ phận khoa Công nghệ thông tin</td>
-                                        <td> 	Bí thư Nguyễn Thanh Tùng</td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Công đoàn khoa Công nghệ thông tin</td>
-                                        <td>Chủ tịch Nguyễn Hữu Thọ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Chi đoàn giáo viên</td>
-                                        <td>Bí Thư  Đỗ Oanh Cường</td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Liên chi Khoa CNTT</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-md-12" style="margin-top: 5%;">
-                                <b>* Các phòng thí nghiệm phục vụ công tác đào tạo, nghiên cứu</b>
-                                <p>- Phòng thí nghiệm Khoa học dữ liệu: <a href="">TS. Đặng Thị Thu Hiền</a> - Trưởng Lab</p>
-                                <p>- Phòng thí nghiệm Mô hình hóa và mô phỏng: <a href="">TS. Nguyễn Ngọc Doanh</a> - Trưởng Lab</p>
-                                <p>Ngoài ra, Khoa còn thành lập một hội đồng Khoa tư vấn cho Trưởng khoa các công việc đào tạo,
-                                    nghiên cứu cũng như định hướng phát triển của Khoa CNTT.</p>
-                                <p>Ban chủ nhiệm Khoa đóng vai trò chủ đạo trong việc quyết định mọi dự án cũng như các kế hoạch phát triển của Khoa. 
-                                    Văn phòng Khoa là nơi giải quyết tất cả những thủ tục hành chính của Khoa cũng 
-                                    như quản lý tất cả những thông tin của sinh viên và cán bộ trong Khoa CNTT.</p>
-                            </div>
+                            
+                            
                             <div class="row" style="float: right;;">
                                 <div class="col-md-12" style="float: right;">
                                     <a href="../gioithieu/cocautochuc.php">Trở về đầu trang</a>

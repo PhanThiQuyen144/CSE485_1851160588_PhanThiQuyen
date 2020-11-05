@@ -115,14 +115,14 @@
                                         <div >
                                             <div class="news-grid-left-img " style="background: url(../3.PROJECT/images/cse-hallthumb.jpg);background-position: center;background-size: cover;padding: 4.5em 0;">
                                                 <h6 >
-                                                    <a  href="http://cse.tlu.edu.vn/loi-chao-mung" >
+                                                    <a  href="../3.PROJECT/include/gioithieu/loichaomung.php" >
                                                         LỜI CHÀO MỪNG
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div class="news-grid-left-info">
                                                 <h5>
-                                                    <a href="http://cse.tlu.edu.vn/loi-chao-mung/loi-chao-mung-8">
+                                                    <a href="../3.PROJECT/include/gioithieu/loichaomung.php">
                                                         Lời chào mừng
                                                     </a>
                                                 </h5>
