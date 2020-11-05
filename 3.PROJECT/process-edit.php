@@ -1,5 +1,5 @@
 <?php
-    require('connect.php');
+    require_once('connect.php');
     // include("function.php")
     $id= $_GET["id"];
     $username=$_POST['username'];
@@ -8,11 +8,12 @@
     $email=$_POST['email'];
    
     $sql="UPDATE cse
-    SET username = '$username', 
-    password = '$password',
+    SET id='$id',
+    username = '$username', 
+    password1 = '$password',
     displayname = '$displayname',
     email = '$email',
-    WHERE id='$id'";
+    WHERE id=$id";
     if (mysqli_query($dbcon, $sql)) {
         header('location: hethong.php ');
     } else {

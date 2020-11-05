@@ -20,7 +20,7 @@
   <body>
     <div class="col-sm-8">
        <h2 class="h2 text-center"> Edit Register</h2>
-        <form action="process-edit.php" method="post" onsubmit="return checked();"name="regform" id="regform">
+        <form action='process-edit.php?id=<?php echo $row['id']?>' method="POST" onsubmit="return checked();"name="regform" id="regform">
             <div class="form-group row">
                 <label for="first_name" class="col-sm-4 col-form-label">User name:</label>
             <div class="col-sm-8">

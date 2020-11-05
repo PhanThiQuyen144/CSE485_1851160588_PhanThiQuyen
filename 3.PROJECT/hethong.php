@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="css/template.css" type="text/css">
 
 <!-- Menu head -->
-<link href="../3.PROJECT/css/ja.css" rel="stylesheet" type="text/css">
-<link href="../3.PROJECT/css/default.css" rel="stylesheet" type="text/css">
-<link href="../3.PROJECT/css/style.css" rel="stylesheet" type="text/css">
+<link href="css/ja.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body id="bd" class="wide fs3">
@@ -20,8 +20,8 @@
 <!-- BEGIN: HEADER -->
 	<div id="ja-header" class="clearfix" style="height: 100px;">
 		<h1 class="logo">
-			<a href="../3.PROJECT/CSE.php" title="">
-				<img src="../3.PROJECT/images/logo.jpg" alt="">
+			<a href="CSE.php" title="">
+				<img src="images/logo.jpg" alt="">
 			</a>
 		</h1>
 	</div>
@@ -146,7 +146,7 @@
 		<h3>Main Menu</h3>
 			<ul class="menu">
 			<li id="current" class="active item1"><a href="user.html">Quản trị người sử dụng</a></li>
-			<li class="item82"><a href="phanquyen.html">Phân quyền người sử dụng</a></li>
+			<li class="item82"><a href="phanquyen.php">Phân quyền người sử dụng</a></li>
 			<li class="item83"><a href="log.html">Quản lý log</a></li>
 			<li class="item85"><a href="dsmonhoc.html"><a href="changepass.html">Đổi mật khẩu</a></li>			
 			</ul>		

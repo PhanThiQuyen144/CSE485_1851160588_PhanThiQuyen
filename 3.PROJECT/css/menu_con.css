@@ -58,7 +58,7 @@ ul li{
 ul li p{
     font-size: 16px;
     box-sizing: border-box;
-    
+   
 }
 .tag-link{
     margin-bottom: 30px;
@@ -68,6 +68,9 @@ ul li p{
 }
 .tlu-menu .menu ul{
     padding: 0;  
+}
+.none{
+    padding: 0px !important;
 }
 .tlu-menu .menu ul li{
     padding: 0px !important;
@@ -87,6 +90,7 @@ ul li p{
     line-height: 25px;
     background-color: #003478!important;
     border-radius: 2px!important;
+    
 }
 .breadcrumbLink {
     color: #fff;
@@ -95,5 +99,14 @@ ul li p{
     font-size: 130%;
     font-family: 'Roboto Condensed', Arial;
 }
-
+/* .pagination{
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 550px;
+}
+@media (max-width:300px){
+    .pagination{
+        margin-left:0;
+    }
+} */
 
