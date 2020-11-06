@@ -56,11 +56,11 @@ $(document).ready(function(){
         $(".nav-sub7").hide('slow');
     })
 });
-// $(document).ready(function(){
-//     $(".has-sub").mouseenter(function(){
-//         $(".nav-sub").show(fast)
-//     })
-// })
+$(document).ready(function(){
+    $(".has-sub").mouseenter(function(){
+        $(".nav-sub").show(fast)
+    })
+})
 
 $(document).ready(function(){
     $(":input").click(function(){

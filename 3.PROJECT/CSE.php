@@ -8,10 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../3.PROJECT/CSE.css">
+    <link rel="stylesheet" href="CSE.css">
   </head>
   <body>
-        <form action="/" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data">
             <?php
                 include("header.php"); 
             ?>
@@ -132,14 +132,14 @@
                                             <div style="padding-top:25px">
                                                 <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/cse-tlu-narathumb.jpg) ; background-size: cover;padding: 4.5em 0;background-position:center;">
                                                     <h6>
-                                                        <a href="http://cse.tlu.edu.vn/khoa-hoc-cong-nghe">
+                                                        <a href="nghien_cuu_khoa_hoc.php">
                                                             NGHIÊN CỨU KHOA HỌC
                                                         </a>
                                                     </h6>
                                                 </div>
                                                 <div class="news-grid-left-info">
                                                     <h5>
-                                                        <a href="http://cse.tlu.edu.vn/khoa-hoc-cong-nghe">Nghiên cứu khoa học</a>
+                                                        <a href="nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a>
                                                     </h5>
                                                 </div>
                                             </div>
@@ -166,14 +166,14 @@
                                             <div style="padding-top:25px">
                                                 <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/K54tn.PNG);background-position: center; background-size: cover;padding: 4.5em 0;">
                                                     <h6>
-                                                        <a href="http://cse.tlu.edu.vn/dao-tao">
+                                                        <a href="dao-tao.php">
                                                             ĐÀO TẠO
                                                         </a>
                                                     </h6>
                                                 </div>
                                                 <div class="news-grid-left-info">
                                                     <h5>
-                                                        <a href="http://cse.tlu.edu.vn/dao-tao">Đào tạo</a>
+                                                        <a href="dao-tao.php">Đào tạo</a>
                                                     </h5>
                                                 </div>
                                             </div>
@@ -227,14 +227,14 @@
                           <li><a class="ui-link-white" href="../3.PROJECT/include/gioithieu/hoptacquocte.php">Hợp tác liên kết</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao">Đào tạo</a></li>
+                          <li><a class="ui-link-white" href="dao-tao.php">Đào tạo</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/mo-hinh-dao-tao">Mô hình đào tạo</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-dai-hoc-chinh-quy">Đào tạo đại học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-tien-si">Định hướng ngành nghề</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-sau-dai-hoc">Đào tạo sau đại học</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-cong-nghe">Nghiên cứu khoa học</a></li>
+                          <li><a class="ui-link-white" href="nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/thong-tin-seminar">Thông tin seminar</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-de-tai-du-an">Các đề tài, dự án</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-cong-trinh-cong-bo">Công trình công bố</a></li>
@@ -268,11 +268,11 @@
         </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../PROJECT/CSE.js"></script>
+    <script src="CSE.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
-     <script src="../PROJECT/CSE.js"></script>
+     <script src="CSE.js"></script>
    </body>
 </html>

@@ -21,15 +21,15 @@
                 <div class="container">
                     <div class="row">
                       <div class="col-lg-9">
-                        <h1 style="font-size: 34px; line-height: 2; font-family: Calibri;"><b>ĐÀO TẠO</b> </h1>
+                        <h1 style="font-size: 34px; line-height: 2; font-family: Calibri;"><b>THÔNG BÁO</b> </h1>
                         <div class="row">
                         <?php 
                         // PHẦN XỬ LÝ PHP
                         // BƯỚC 1: KẾT NỐI CSDL
-                        $conn = mysqli_connect('localhost', 'root', '', 'daotao');
+                        $conn = mysqli_connect('localhost', 'root', '', 'thongbao');
                 
                         // BƯỚC 2: TÌM TỔNG SỐ RECORDS
-                        $result = mysqli_query($conn, 'select count(id) as total from daotao');
+                        $result = mysqli_query($conn, 'select count(id) as total from thongbao');
                         $row = mysqli_fetch_assoc($result);
                         $total_records = $row['total'];
                 
@@ -54,7 +54,7 @@
                 
                         // BƯỚC 5: TRUY VẤN LẤY DANH SÁCH TIN TỨC
                         // Có limit và start rồi thì truy vấn CSDL lấy danh sách tin tức
-                        $result = mysqli_query($conn, "SELECT * FROM daotao LIMIT $start, $limit");
+                        $result = mysqli_query($conn, "SELECT * FROM thongbao LIMIT $start, $limit");
                 
                         ?>
                         <div style=" margin-right: 50px;">
@@ -63,14 +63,14 @@
                             // BƯỚC 6: HIỂN THỊ DANH SÁCH TIN TỨC
                             while ($row = mysqli_fetch_assoc($result)){
                                 ?>
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 30px">
                                 <div class="col-md-4" style=" ">
                                   <img style="width: 150px;height: 100px;" src="<?php echo $row['img'] ?>" alt="" class="img-fluid pt-2">
                                 </div>
                                 <div class="col-md-8 pt-2" style=" font-size:14px">
                                   <a href="<?php echo $row['content'] ?> " style="text-decoration: none;list-style: none;font-family: 'Roboto Condensed', sans-serif;font-size:24px;color: #003478 ;"> <?php echo $row['name'] ?></a> 
-                                  <p><?php echo $row['description'] ?></p>   
-                                  <a href="<?php echo $row['content'] ?> " style="text-decoration: none;display: block;float: right;">>Xem chi tiết</a>
+                                  
+                                  <a href="<?php echo $row['content'] ?> " style="text-decoration: none;display: block;float: right;margin-top: 40px">>Xem chi tiết</a>
                                                   
                                 </div>
                                 </div>
@@ -86,7 +86,7 @@
               
                           // nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
                           if ($current_page > 1 && $total_page > 1){
-                              echo '<a href="dao-tao.php?page='.($current_page-1).'">Prev</a> | ';
+                              echo '<a href="thongbao.php?page='.($current_page-1).'">Prev</a> | ';
                           }
               
                           // Lặp khoảng giữa
@@ -97,13 +97,13 @@
                                   echo '<span>'.$i.'</span> | ';
                               }
                               else{
-                                  echo '<a href="dao-tao.php?page='.$i.'">'.$i.'</a> | ';
+                                  echo '<a href="thongbao.php?page='.$i.'">'.$i.'</a> | ';
                               }
                           }
               
                           // nếu current_page < $total_page và total_page > 1 mới hiển thị nút prev
                           if ($current_page < $total_page && $total_page > 1){
-                              echo '<a href="dao-tao.php?page='.($current_page+1).'">Next</a> | ';
+                              echo '<a href="thongbao.php?page='.($current_page+1).'">Next</a> | ';
                           }
                         ?>
                       </div>
@@ -128,15 +128,15 @@
                       </div>
                       <div class="col-lg-3">
                         <div class="tlu-menu">
-                          <p style="font-size: 30px; line-height: 2; font-family: Calibri;"><a href="" style="list-style: none;text-decoration: none;">Đào tạo</a></p>
+                          <p style="font-size: 30px; line-height: 2; font-family: Calibri;"><a href="" style="list-style: none;text-decoration: none;">Thông báo</a></p>
                           <div class="menu">
                             <ul class="hihi">
-                              <li><a href="">> Đào tạo đại học</a></li>
-                              <li><a href="">> Đào tạo sau đại học</a></li>
-                              <li><a href="">> Chuẩn đầu ra</a></li>
-                              <li><a href="">> Định hướng ngành nghề</a></li>
-                              <li><a href="">> Mô hình đào tạo</a></li>
-                              <li><a href="">> Đề cương môn học</a></li>
+                              <li><a href="">> Thông báo</a></li>
+                              <li><a href="">> TB đào tạo</a></li>
+                              <li><a href="">> Nghiên cứu khoa học</a></li>
+                              <li><a href="">> Tuyển dụng</a></li>
+                              <li><a href="">> Học bổng</a></li>
+                              <li><a href="">> Thông báo khác</a></li>
                             </ul>
                           </div>
                         </div>
