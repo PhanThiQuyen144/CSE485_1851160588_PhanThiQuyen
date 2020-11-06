@@ -88,13 +88,13 @@
                            <div class="collapse navbar-collapse" id="collapsibleNavId">
                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                     <li class="nav-item dropdown">
-                                       <a class="navbar-brand has-sub has-sub1" href="../3.PROJECT/include/gioithieu/gioithieu.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       <a class="navbar-brand has-sub has-sub1" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/gioithieu/gioithieu.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        GIỚI THIỆU</a>
                                        <div class="dropdown-menu nav-sub nav-sub1 dropdown_menu  " aria-labelledby="dropdownId">
-                                           <a class="dropdown-item text-white" href="../3.PROJECT/include/gioithieu/logokhoa.php">Logo khoa CNTT</a>
-                                           <a class="dropdown-item text-white" href="../3.PROJECT/include/gioithieu/loichaomung.php">Lời chào mừng</a>
-                                           <a class="dropdown-item text-white" href="../3.PROJECT/include/gioithieu/cocautochuc.php">Tổ chức</a>
-                                           <a class="dropdown-item text-white" href="../3.PROJECT/include/gioithieu/hoptacquocte.php">Hợp tác liên kết</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/gioithieu/logokhoa.php">Logo khoa CNTT</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/gioithieu/loichaomung.php">Lời chào mừng</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/gioithieu/cocautochuc.php">Tổ chức</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/gioithieu/hoptacquocte.php">Hợp tác liên kết</a>
                                        </div>
                                    </li>
                                </ul>
@@ -132,12 +132,12 @@
                                     <li class="nav-item dropdown">
                                        <a class="navbar-brand has-sub has-sub4" href="http://cse.tlu.edu.vn/bo-mon-trung-tam" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BỘ MÔN-TRUNG TÂM</a>
                                        <div class="dropdown-menu nav-sub nav-sub4 dropdown_menu" aria-labelledby="dropdownId">
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/cong-nghe-phan-mem">CN phần mềm</a>
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/he-thong-thong-tin">Hệ thống thông tin</a>
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/khoa-hoc-may-tinh">Khoa học máy tính</a>
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/ky-thuat-may-tinh-va-mang">Kỹ thuật máy tính và mạng</a>
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/bo-mon-toan-hoc">Toán học</a>
-                                           <a class="dropdown-item text-white" href="http://cse.tlu.edu.vn/B%e1%bb%99-m%c3%b4n-Trung-t%c3%a2m/Tin-h%e1%bb%8dc-v%c3%a0-k%e1%bb%b9-thu%e1%ba%adt-t%c3%adnh-to%c3%a1n">
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/congnghephanmem.php">CN phần mềm</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/hethongthongtin.php">Hệ thống thông tin</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/khoahocmaytinh.php">Khoa học máy tính</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/tinhocvakythuattinhtoan.php">Kỹ thuật máy tính và mạng</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/toanhoc.php">Toán học</a>
+                                           <a class="dropdown-item text-white" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/include/bomontrungtam/trungtamtinhoc.php">
                                             Trung tâm tin học
                                         </a>
                                        </div>

@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Lễ ký kết thỏa thuận hợp tác</title>
+    <title>He thong thong tin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
      <link rel="stylesheet" href="../../CSE.css">
      <link rel="stylesheet" href="../../css/logo.css">
   </head>
@@ -21,32 +21,39 @@
                     <div class="row ">
                         <div class="col-md-12 gthieu text-white">
                             <h5 >
-                                <a href="../gioithieu/gioithieu.php" class="text-white">Giới thiệu</a> > <a href="../gioithieu/hoptacquocte.php" class="text-white">Hợp tác liên kết</a> 
+                                <a href="../../header.php" class="text-white">Bộ môn-Trung tâm</a> > <a href="../bomontrungtam/hethongthongtin.php" class="text-white">Hệ thống thông tin</a> 
                             </h5>
                         </div>
                     </div>
                     <div class="row content">
                         <div class="col-md-9 logo">
                             <div class="col-md-12">
+                                <h3><b>Giới thiệu Bộ môn hệ thống thông tin</b></h3>
+                                <h6>Bộ môn Hệ thống thông tin đảm nhiệm chức năng giảng dạy tin đại cương, môn tin cơ sở và chuyên ngành Hệ thống thông tin</h6>
+                                
+                            </div>
+                            <div class="col-md-12">
                                 <?php 
-                                require("config.php");
-                                $sql = "SELECT * FROM hoptacquocte";
+                                require("../../config.php");
+                                $sql = "SELECT * FROM hethongthongtin";
                                 mysqli_set_charset($conn,'UTF8');
                                 $result = mysqli_query($conn,$sql);
                                 // 3. Xu ly ket qua
                                 while($row = mysqli_fetch_assoc($result)){ ?>
-                                   
-                                  <pre style="overflow-x: hidden;" align="justify">
-                                    <?php echo  $row['content']?>
-                                  </pre>
-                                  <img src="<?php echo $row['image']?> " alt="">
+                                  <!-- <pre style="overflow-x: hidden;"> -->
+                                    <b><?php echo $row['position']?> </b>
+                                  <!-- </pre>  -->
+                                  <div class="col-md-12">
+                                    <img src="<?php echo $row['image']?> " alt="" class ="img-fluid">
+                                  </div>
+                                  
                                 <?php 
                                 }
                                 ?>                                                                
                             </div>
                              <div class="row" style="float: right;">
                                 <div class="col-md-12" style="float: right;">
-                                    <a href="../gioithieu/hoptacquocte.php">Trở về đầu trang</a>
+                                    <a href="../bomontrungtam/hethongthongtin.php">Trở về đầu trang</a>
                                 </div>
                             </div>
                             <div class="row icon" >
@@ -63,22 +70,29 @@
                         </div>
                         <div class="col-md-3 gioithieu">
                             <div class="col-md-12" style="padding-bottom: 15%;">
-                                <h4><a href="../gioithieu/gioithieu.php">Giới thiệu</a></h4>
+                                <h4><a href="../../header.php">Bộ môn-Trung tâm</a></h4>
                              </div>
                             <div class="col-md-12 gioithieu1" >
-                                > <a href="../gioithieu/logokhoa.php" class="gioithieu2">   Logo Khoa CNTT</a>
+                                > <a href="../bomontrungtam/congnghephanmem.php" class="gioithieu2">CN phần mềm</a>
                             </div>
 
                             <div class="col-md-12 gioithieu1">
-                                > <a href="../gioithieu/loichaomung.php" class="gioithieu2">Lời chào mừng </a>
+                                > <a href="../bomontrungtam/hethongthongtin.php" class="gioithieu2">Hệ thống thông tin </a>
                             </div>
                              <div class="col-md-12 gioithieu1">
-                            > <a href="../gioithieu/cocautochuc.php" class="gioithieu2">Tổ chức</a>
+                            > <a href="../bomontrungtam/khoahocmaytinh.php" class="gioithieu2"> Khoa học máy tính </a>
                             </div>
                             <div class="col-md-12 gioithieu1">
-                             > <a href="../gioithieu/hoptacquocte.php" class=gioithieu2>Hợp tác liên kết</a>
+                             > <a href="../bomontrungtam/toanhoc.php" class=gioithieu2>Toán học  </a>
+                            </div>
+                            <div class="col-md-12 gioithieu1">
+                             > <a href="../bomontrungtam/tinhocvakythuattinhtoan.php" class=gioithieu2>Tin học và Kỹ thuật tính toán </a>
+                            </div>
+                             <div class="col-md-12 gioithieu1">
+                             > <a href="../bomontrungtam/trungtamtinhoc.php" class=gioithieu2>Trung tâm tin học</a>
                             </div>
                         
+                        </div>
                         </div>
                     </div>
                    
@@ -113,12 +127,12 @@
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-phong-thi-nghiem">Các phòng thí nghiệm</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cong-nghe-phan-mem">Công nghệ phần mềm</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/he-thong-thong-tin">Hệ thống thông tin</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-may-tinh">Khoa học máy tính</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/ky-thuat-may-tinh-va-mang">Kỹ thuật máy tính và mạng</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/bo-mon-toan-hoc">Toán học</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/trung-tam-tin-hoc">Trung tâm học</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/congnghephanmem.php">Công nghệ phần mềm</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/hethongthongtin.php">Hệ thống thông tin</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/khoahocmaytinh.php">Khoa học máy tính</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/tinhocvakythuattinhtoan.php">Kỹ thuật máy tính và mạng</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/toanhoc.php">Toán học</a></li>
+                          <li><a class="ui-link-white" href="../bomontrungtam/trungtamtinhoc.php">Trung tâm học</a></li>
                         </ul>
     
                       </div>
@@ -140,9 +154,9 @@
     </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
      <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
     </body>
 </html>
