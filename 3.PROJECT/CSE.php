@@ -149,14 +149,14 @@
                                         <div>
                                             <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/gv-khoa-cnttthumb.jpg);background-position: center;background-size: cover; padding: 4.5em 0;">
                                                 <h6>
-                                                    <a  href="../3.PROJECT/giangvien.php">
+                                                    <a  href="../3.PROJECT/include/bomontrungtam/giangvien.php">
                                                         GIẢNG VIÊN 
                                                     </a>
                                                 </h6>
                                             </div>
                                             <div class="news-grid-left-info">
                                                 <h5>
-                                                    <a href="../3.PROJECT/giangvien.php">
+                                                    <a href="../3.PROJECT/include/bomontrungtam/giangvien.php">
                                                         Giảng viên
                                                     </a>
                                                 </h5>
@@ -241,12 +241,12 @@
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-phong-thi-nghiem">Các phòng thí nghiệm</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cong-nghe-phan-mem">Công nghệ phần mềm</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/he-thong-thong-tin">Hệ thống thông tin</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-may-tinh">Khoa học máy tính</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/ky-thuat-may-tinh-va-mang">Kỹ thuật máy tính và mạng</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/bo-mon-toan-hoc">Toán học</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/trung-tam-tin-hoc">Trung tâm học</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/congnghephanmem.php">Công nghệ phần mềm</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/hethongthongtin.php">Hệ thống thông tin</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/khoahocmaytinh.php">Khoa học máy tính</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/tinhocvakythuattinhtoan.php">Kỹ thuật máy tính và mạng</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/toanhoc.php">Toán học</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/bomontrungtam/trungtamtinhoc.php">Trung tâm học</a></li>
                         </ul>
     
                       </div>

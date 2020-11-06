@@ -146,7 +146,7 @@
 		<h3>Main Menu</h3>
 			<ul class="menu">
 			<li id="current" class="active item1"><a href="user.html">Quản trị người sử dụng</a></li>
-			<li class="item82"><a href="phanquyen.php">Phân quyền người sử dụng</a></li>
+			<li class="item82"><a href="phanquyen1.php">Phân quyền người sử dụng</a></li>
 			<li class="item83"><a href="log.html">Quản lý log</a></li>
 			<li class="item85"><a href="dsmonhoc.html"><a href="changepass.html">Đổi mật khẩu</a></li>			
 			</ul>		
