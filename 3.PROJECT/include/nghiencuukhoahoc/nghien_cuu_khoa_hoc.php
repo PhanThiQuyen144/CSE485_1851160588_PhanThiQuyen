@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Khoa Công nghệ thông tin - Trường ĐH Thủy Lợi</title>
+    <title>Nghiên cứu khoa học</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSE.css">
-    
-    <link rel="stylesheet" href="css/menu_con.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+     <link rel="stylesheet" href="../../CSE.css">
+     <!-- <link rel="stylesheet" href="../../css/logo.css"> -->
+     <link rel="stylesheet" href="../../css/menu_con.css">
     
   </head>
-  <body>
-      
-    <?php include('header.php'); ?>
-
-    <div class="main" style="margin-top: 3%;">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-lg-9">
-                        <h1 style="font-size: 34px; line-height: 2; font-family: Calibri;"><b>Các hướng nghiên cứu Công nghệ thông tin</b> </h1>
+  
+  <body >
+    <form action="" method="post">
+        <?php 
+            include("../../../3.PROJECT/header.php");
+        ?>
+        <div class="main ">
+          <div class="container  "  >
+            <div class="row content">
+              <div class="col-md-9 logo">
+              <h1 style="font-size: 34px; line-height: 2; font-family: Calibri;"><b>Các hướng nghiên cứu Công nghệ thông tin</b> </h1>
                         <p style="color=#000000 font-size: 30px;" ><strong style=" font-size: 18px;">Một số hướng nghiên cứu về Công nghệ thông tin</strong> </p>
                         <ul>
                           <li>
@@ -95,9 +97,10 @@
                           <a href="" role="button" class="icon-1" style="margin-left: 20px;background-color: rgb(59, 89, 152); border-radius: 2px;width: 20px;height: 20px;"><i class="fab fa-twitter"></i></a>
                           <a href="" role="button" class="icon-1" style="margin-left: 20px;background-color: rgb(59, 89, 152); border-radius: 2px;width: 20px;height: 20px;"><i class="fab fa-invision"></i></a> -->
                         </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="tlu-menu">
+                      
+              </div> 
+              <div class="col-md-3 gioithieu">
+              <div class="tlu-menu">
                           <p style="font-size: 30px; line-height: 2; font-family: Calibri;"><a href="" style="list-style: none;text-decoration: none;">Nghiên cứu khoa học</a></p>
                           <div class="menu">
                             <ul class="hihi">
@@ -108,22 +111,72 @@
                             </ul>
                           </div>
                         </div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+         <footer>
+                <div class="container" style="max-width: 960px;">
+                  <div class="footer-conten">
+                    <div class="footer-top">
+                      <div class="it-nav-footer">
+                        <ul class="nav-footer-link">
+                          <li><a class="ui-link-white" href="../3.PROJECT/gioithieu.html">Giới thiệu</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/logokhoa.html">Logo của Khoa CNTT</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/loichaomung.html">Lời chào mừng</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/cocautochuc.html">Tổ chức</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/hoptacquocte.html">Hợp tác liên kết</a></li>
+                        </ul>
+                        <ul class="nav-footer-link">
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao">Đào tạo</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/mo-hinh-dao-tao">Mô hình đào tạo</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-dai-hoc-chinh-quy">Đào tạo đại học</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-tien-si">Định hướng ngành nghề</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-sau-dai-hoc">Đào tạo sau đại học</a></li>
+                        </ul>
+                        <ul class="nav-footer-link">
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-cong-nghe">Nghiên cứu khoa học</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/thong-tin-seminar">Thông tin seminar</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-de-tai-du-an">Các đề tài, dự án</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-cong-trinh-cong-bo">Công trình công bố</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-phong-thi-nghiem">Các phòng thí nghiệm</a></li>
+                        </ul>
+                        <ul class="nav-footer-link">
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cong-nghe-phan-mem">Công nghệ phần mềm</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/he-thong-thong-tin">Hệ thống thông tin</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-may-tinh">Khoa học máy tính</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/ky-thuat-may-tinh-va-mang">Kỹ thuật máy tính và mạng</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/bo-mon-toan-hoc">Toán học</a></li>
+                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/trung-tam-tin-hoc">Trung tâm học</a></li>
+                        </ul>
+    
                       </div>
                     </div>
-                    
-                 </div>
-    </div>
-    <?php include('footer.php');?>
-           
-
-
-    <!-- Optional JavaScript -->
+                    <div class="footer-bot" >
+                      <img src="../../images/footer-img.png" alt="image" class="footer-bot-img">
+                      <p>
+                        © 2017 Khoa Công nghệ thông tin - Đại học Thủy lợi
+                        <br>
+                        
+                        Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-024 3 5632211. Email: 
+                        <a class="ui-link-white"  style="text-decoration: none; color: white;" href="http://cse.tlu.edu.vn/dao-tao/de-cuong-mon-hoc#">vpkcntt@tlu.edu.vn</a>
+                      </p>
+                    </div>               
+                  </div>
+                  
+                </div>
+              </footer>
+    </form>                                      
+           <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="CSE.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
-     
-   </body>
+    <script src="../../CSE.js" ></script>
+    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../js/popper.min.js" ></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
+    </body>
 </html>
+ 
+
+
+ 

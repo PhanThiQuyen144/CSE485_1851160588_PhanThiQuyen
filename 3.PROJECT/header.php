@@ -26,11 +26,11 @@
                         <li>(+)</li>
                         <li>|</li>
                         <li> 
-                            <a href="../3.PROJECT/Login.php" class="text-white"> Login</a>
+                            <a href="../../Login.php" class="text-white"> Login</a>
                         </li>
                         <li>|</li>
                         <li>
-                            <a href="register.php" class="text-white"> Register</a>
+                            <a href="../../register.php" class="text-white"> Register</a>
                         </li>
                         <li>|</li>
                         
@@ -69,7 +69,7 @@
                     <div class="header_logo " >
                         <h1>
                             <a href="../3.PROJECT/CSE.php" >
-                                <img src="../3.PROJECT/images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
+                                <img src="../../images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
                             </a>
                         </h1>
                     </div> 
