@@ -30,7 +30,7 @@
                         </li>
                         <li>|</li>
                         <li>
-                            <a href="../../register.php" class="text-white"> Register</a>
+                            <a href="register.php" class="text-white"> Register</a>
                         </li>
                         <li>|</li>
                         

@@ -88,7 +88,7 @@
               
                           // nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
                           if ($current_page > 1 && $total_page > 1){
-                              echo '<a href="dao-tao.php?page='.($current_page-1).'">Prev</a> | ';
+                              echo '<a href="daotao.php?page='.($current_page-1).'">Prev</a> | ';
                           }
               
                           // Lặp khoảng giữa
@@ -99,13 +99,13 @@
                                   echo '<span>'.$i.'</span> | ';
                               }
                               else{
-                                  echo '<a href="dao-tao.php?page='.$i.'">'.$i.'</a> | ';
+                                  echo '<a href="daotao.php?page='.$i.'">'.$i.'</a> | ';
                               }
                           }
               
                           // nếu current_page < $total_page và total_page > 1 mới hiển thị nút prev
                           if ($current_page < $total_page && $total_page > 1){
-                              echo '<a href="dao-tao.php?page='.($current_page+1).'">Next</a> | ';
+                              echo '<a href="daotao.php?page='.($current_page+1).'">Next</a> | ';
                           }
                         ?>
                       </div>

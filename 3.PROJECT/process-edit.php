@@ -10,9 +10,9 @@
     $sql="UPDATE cse
     SET id='$id',
     username = '$username', 
-    password1 = '$password',
+    password = '$password',
     displayname = '$displayname',
-    email = '$email',
+    email = '$email'
     WHERE id=$id";
     if (mysqli_query($dbcon, $sql)) {
         header('location: hethong.php ');

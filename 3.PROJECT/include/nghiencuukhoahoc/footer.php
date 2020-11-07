@@ -53,7 +53,7 @@
                       </div>
                     </div>
                     <div class="footer-bot" >
-                      <img src="images/footer-img.png" alt="image" class="footer-bot-img">
+                      <img src="../../images/footer-img.png" alt="image" class="footer-bot-img">
                       <p>
                         © 2017 Khoa Công nghệ thông tin - Đại học Thủy lợi
                         <br>

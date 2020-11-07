@@ -63,7 +63,7 @@
 <div id="ja-mainbody" class="clearfix">
 
 <!-- BEGIN: CONTENT -->
-	<div class="title-module">PHÂN QUYỀN NGƯỜI SỬ DỤNG</div>
+	<div class="title-module">QUẢN TRỊ BÀI VIẾT</div>
 	<div class="list-course">
 		<table class="list-course">
 			<tr class="row-first">													
@@ -130,6 +130,14 @@
 							        <td><input type="checkbox" checked="checked"></td>
 							        <td><a href="../3.PROJECT/include/gioithieu/delete_hoptacquocte.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
                                 </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly dao tao </td>
+							        <td><a href="../3.PROJECT/include/daotao/index_daotao.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/create_daotao.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/edit_daotao.php"><i class="fas fa-trash-alt"></i>Edit</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/delete_daotao.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+                                </tr>
                                 
                             <?php 
                                 }
@@ -155,7 +163,7 @@
 		<h3>Main Menu</h3>
 			<ul class="menu">
 			<li id="current" class=" item1"><a href="../3.PROJECT/hethong.php">Quản trị người sử dụng</a></li>
-			<li class=" active item82"><a href="../3.PROJECT/phanquyen1.php">Phân quyền người sử dụng</a></li>
+			<li class=" active item82"><a href="../3.PROJECT/phanquyen1.php">Quản trị bài viết</a></li>
 			<li class="item83"><a href="log.html">Quản lý log</a></li>
 			<li class="item85"><a href="dsmonhoc.html"><a href="changepass.html">Đổi mật khẩu</a></li>			
 			</ul>		
