@@ -4,7 +4,7 @@
   <meta name="robots" content="index, follow">
   <title>Admin CSE TLU</title>
 
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/template.css" type="text/css">
 
 <!-- Menu head -->
@@ -65,9 +65,11 @@
 
 <!-- BEGIN: CONTENT -->
 	<div class="title-module">DANH SÁCH NGƯỜI SỬ DỤNG</div>
+			<form action="search.php" method="POST">
+                <?php echo ("hihi"); ?>
 				<div class="filter">
-					<div class="label">Tên đăng nhập</div>
-					<div class="value"><input type="text" name="code" size="20"></div>					
+					<div class="label" id="label1">Tên đăng nhập</div>
+					<input type="text" name="code" size="20">				
 					<div class="label">Nhóm quyền</div>
 					<div class="value">
 						<select>
@@ -77,10 +79,28 @@
 							<option>Quản lý tài chính</option>							
 						</select>
 					</div>					
-					<div class="search"><input type="button" value="Tìm" name="search"></div>
+					<input type="button" value="Tìm" name="search">
 				</div>
+			</form>
+			
 			  <div class="list-course">
+              <?php
+$conn=mysqli_connect('localhost', 'root','','cse');
+if($conn){
+    mysqli_query($conn, "SET NAME 'utf8' ");
+}
+else
+    die('ket noi that bai');
+// require("connect2.php");
+$output="";
+if(isset($_POST['search'])){
+    $search=$_POST['code'];
+    if($search!=""){
+        $query="SELECT*FROM cse WHERE username LIKE '%$search%' ";
+        $result=mysqli_query($conn,$query);
+        if($result){?>
 					<table class="list-course" bgcolor="#FFFFFF">
+                        <thead>
 						<tr class="row-first">
 							<td width="10"><input type="checkbox"></td>
 							<td width="30">Sửa</td>
@@ -91,22 +111,13 @@
 							<!-- <td width="70">SĐT</td> -->
 							<td width="100">Nhóm quyền</td>	
 							
-						</tr>
-						<tr>
+                        </tr>
+                        </thead>
+                        
 					<?php	 
-							 $host = 'localhost';
-    						$user = 'root';
-    						$pass = '';
-    						$db   = 'cse';
-    						$conn = mysqli_connect($host,$user,$pass, $db);
-    						if(!$conn){
-        					die("Không thể kết nối");
-							}
-                      		$sql = "SELECT * FROM cse";
-                      		mysqli_set_charset($conn,'UTF8');
-                      		$result = mysqli_query($conn,$sql);
-                      // 3. Xu ly ket qua
-                      while($row = mysqli_fetch_assoc($result)){ ?>
+							
+                      while($row = mysqli_fetch_array($result)){ ?>
+                      <tbody>
 							<td width="10"><input type="checkbox" value="<?php  echo $row['id'] ?>"></td>
 							<td><a href="edit.php?id=<?php echo $row["id"]?>"><img src="../3.PROJECT/images/edit.gif" alt=""></a></td>
 							<td><a href="delete.php?id=<?php echo $row["id"] ?>"><img src="../3.PROJECT/images/deleted.jpg" alt=""></a></td>
@@ -115,9 +126,16 @@
 							<td><?php  echo $row['email']?></td>
 							<!-- <td>09759755555</td> -->
 							<td>admin</td>
-						</tr>
+                        </tr>
+                        </tbody>
 						<?php
-						}
+                        }
+                    }
+                    else{
+                        //k có ký tự nào đc nhập vào từ bàn phím
+                        $output="<span>Please enter your keyword!</span>";
+                    }
+                }
 						?>
 						<!-- <tr>
 							<td width="10"><input type="checkbox"></td>
@@ -146,7 +164,7 @@
 		<h3>Main Menu</h3>
 			<ul class="menu">
 			<li id="current" class="active item1"><a href="user.html">Quản trị người sử dụng</a></li>
-			<li class="item82"><a href="phanquyen1.php">Quản trị bài viết</a></li>
+			<li class="item82"><a href="phanquyen1.php">Phân quyền người sử dụng</a></li>
 			<li class="item83"><a href="log.html">Quản lý log</a></li>
 			<li class="item85"><a href="dsmonhoc.html"><a href="changepass.html">Đổi mật khẩu</a></li>			
 			</ul>		

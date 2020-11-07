@@ -6,7 +6,7 @@
     $result = mysqli_query($dbcon, $sql);
     $row=mysqli_fetch_array($result);
 ?>
-<!doctype html>
+<!doctype html> 
 <html lang="en">
   <head>
     <title>Title</title>
@@ -50,7 +50,7 @@
     <div class="col-sm-8">
       <input type="password" class="form-control" id="password1" name="password1" 
 	  placeholder="Password" minlength="8" maxlength="12" required
-	  value="">
+	  value="<?php  echo $row['password']; ?>">
 	  <span id='message'>Between 8 and 12 characters.</span>
     </div>
   </div>
@@ -59,7 +59,7 @@
     <div class="col-sm-8">
       <input type="password" class="form-control" id="password2" name="password2" 
 	  placeholder="Confirm Password" minlength="8" maxlength="12" required
-	  value="">
+	  value="<?php  echo $row['password']; ?>">
     </div>
   </div>
     <div class="form-group row">

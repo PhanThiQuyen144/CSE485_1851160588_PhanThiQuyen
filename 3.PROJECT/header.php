@@ -26,7 +26,7 @@
                         <li>(+)</li>
                         <li>|</li>
                         <li> 
-                            <a href="../3.PROJECT/Login.php" class="text-white"> Login</a>
+                            <a href="../../Login.php" class="text-white"> Login</a>
                         </li>
                         <li>|</li>
                         <li>
@@ -68,8 +68,13 @@
                 <div class="container" >
                     <div class="header_logo " >
                         <h1>
+<<<<<<< HEAD
                             <a href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/CSE.php" >
                                 <img src="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
+=======
+                            <a href="../3.PROJECT/CSE.php" >
+                                <img src="../../images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
+>>>>>>> db25f42136712571958ddab6beed95e75465c38a
                             </a>
                         </h1>
                     </div> 
