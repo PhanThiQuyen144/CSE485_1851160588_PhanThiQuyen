@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Create Teacher</title>
+    <title>Create Information System</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,46 +14,8 @@
       <div class="container " style="justify-content:center;"  >
         <div class="row">
             <div class="col-md-6">
-                <h3 style="text-align:center;">THÊM GIẢNG VIÊN MỚI</h3>
-                <form action="process_create_giangvien.php" method="post">
-                    <div class="form-group">
-                      <label for="">Thêm mới giảng viên</label>
-                    
-                    </div>
-                    <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Ảnh </label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                      
-                                <input type="text" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Thông tin</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                 <input type="text" name="thongtin" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Tên giảng viên</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                      
-                                <input type="text" name="tengiangvien" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
+                <h3 style="text-align:center;">THÊM NỘI DUNG HỆ THỐNG THÔNG TIN</h3>
+                <form action="process_create_hethongthongtin.php" method="post">
                     <div class="row">
                          <div class="col-md-4">
                             <label for="">Vị trí</label>
@@ -66,7 +28,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                     <div class="row">
+                         <div class="col-md-4">
+                            <label for="">Ảnh </label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                      
+                                <input type="text" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
                          <div class="col-md-4">
                             <label for="">Nội dung</label>
                         </div>
@@ -77,7 +51,7 @@
                       <!-- <small id="helpId" class="text-muted">Help text</small> -->
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                          <div class="col-md-4">
                             <!-- <label for="">Dạy môn</label> -->

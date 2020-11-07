@@ -14,46 +14,8 @@
       <div class="container " style="justify-content:center;"  >
         <div class="row">
             <div class="col-md-6">
-                <h3 style="text-align:center;">THÊM GIẢNG VIÊN MỚI</h3>
-                <form action="process_create_giangvien.php" method="post">
-                    <div class="form-group">
-                      <label for="">Thêm mới giảng viên</label>
-                    
-                    </div>
-                    <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Ảnh </label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                      
-                                <input type="text" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Thông tin</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                 <input type="text" name="thongtin" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Tên giảng viên</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                      
-                                <input type="text" name="tengiangvien" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
+                <h3 style="text-align:center;">THÊM NỘI DUNG CÔNG NGHỆ PHẦN MỀM</h3>
+                <form action="process_create_congnghephanmem.php" method="post">
                     <div class="row">
                          <div class="col-md-4">
                             <label for="">Vị trí</label>
@@ -62,6 +24,18 @@
                             <div class="form-group">
                       
                                 <input type="text" name="vitri" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                         <div class="col-md-4">
+                            <label for="">Ảnh </label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                      
+                                <input type="text" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <!-- <small id="helpId" class="text-muted">Help text</small> -->
                             </div>
                         </div>

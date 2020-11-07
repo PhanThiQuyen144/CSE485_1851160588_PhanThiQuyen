@@ -68,8 +68,8 @@
                 <div class="container" >
                     <div class="header_logo " >
                         <h1>
-                            <a href="../3.PROJECT/CSE.php" >
-                                <img src="../3.PROJECT/images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
+                            <a href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/CSE.php" >
+                                <img src="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
                             </a>
                         </h1>
                     </div> 
@@ -78,7 +78,7 @@
                            <div class="collapse navbar-collapse" id="collapsibleNavId">
                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                    <li class="nav-item dropdown ">
-                                        <a class="homesp navbar-brand" href="../3.PROJECT/CSE.php">TRANG CHỦ</a>
+                                        <a class="homesp navbar-brand" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/CSE.php">TRANG CHỦ</a>
                                    </li>
                                </ul>
                            </div>
@@ -302,5 +302,6 @@
     <script src="../3.PROJECT/js/jquery-3.3.1.slim.min.js"></script>
     <script src="../3.PROJECT/js/popper.min.js" ></script>
     <script src="../3.PROJECT/js/bootstrap.min.js"></script>
+    <!-- <script src="../3.PROJECT/CSE.js"></script> -->
   </body>
 </html>

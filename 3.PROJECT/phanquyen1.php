@@ -85,50 +85,99 @@
                                 <tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly Giang vien </td>
-							        <td><a href="../3.PROJECT/include/bomontrungtam/index_giangvien.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/bomontrungtam/create_giangvien.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_giangvien.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_giangvien.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_giangvien.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							         <td><a href="../3.PROJECT/include/bomontrungtam/index_giangvien.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_giangvien.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
                                  <tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly Gioithieu </td>
-							        <td><a href="../3.PROJECT/include/gioithieu/index_gioithieu.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/create_gioithieu.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_gioithieu.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_gioithieu.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/create_gioithieu.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_gioithieu.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/delete_gioithieu.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
                                  <tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly Logo </td>
-							        <td><a href="../3.PROJECT/include/gioithieu/index_logokhoa.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/create_logokhoa.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/delete_logokhoa.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_logokhoa.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/create_logokhoa.php"> <i class="fas fa-calendar-plus"></i>Thêm</a></td>
+							         <td><a href="../3.PROJECT/include/gioithieu/index_logokhoa.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/delete_logokhoa.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
                                 <tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly Loi chao mung </td>
-							        <td><a href="../3.PROJECT/include/gioithieu/index_loichaomung.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/create_loichaomung.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/delete_loichaomung.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_loichaomung.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/create_loichaomung.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							         <td><a href="../3.PROJECT/include/gioithieu/index_loichaomung.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/delete_loichaomung.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
 								<tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly To chuc </td>
-							        <td><a href="../3.PROJECT/include/gioithieu/index_cocautochuc.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/create_cocautochuc.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/delete_cocautochuc.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_cocautochuc.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/create_cocautochuc.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_cocautochuc.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/delete_cocautochuc.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
 								<tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly Hop tac quoc te </td>
-							        <td><a href="../3.PROJECT/include/gioithieu/index_hoptacquocte.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/create_hoptacquocte.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><input type="checkbox" checked="checked"></td>
-							        <td><a href="../3.PROJECT/include/gioithieu/delete_hoptacquocte.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/index_hoptacquocte.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/create_hoptacquocte.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							         <td><a href="../3.PROJECT/include/gioithieu/index_hoptacquocte.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/gioithieu/delete_hoptacquocte.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly Cong nghe phan mem </td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_congnghephanmem.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_congnghephanmem.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_congnghephanmem.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_congnghephanmem.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly He thong thong tin</td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_hethongthongtin.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_hethongthongtin.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_hehtongthongtin.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_hethongthongtin.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly Khoa hoc may tinh</td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_khoahocmaytinh.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_khoahocmaytinh.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_khoahocmaytinh.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_khoahocmaytinh.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly Ky thuat may tinh va mang</td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_kythuatmaytinhvamang.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_kythuatmaytinhvamang.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_kythuatmaytinhvamang.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_kythuatmaytinhvamang.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly Toan hoc</td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_toanhoc.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_toanhoc.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_toanhoc.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_toanhoc.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly Trung tam tin hoc</td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_trungtamtinhoc.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/create_trungtamtinhoc.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_trungtamtinhoc.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_trungtamtinhoc.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
                                 
                             <?php 
