@@ -1,56 +1,35 @@
+<?php   
+    
+    require_once('../../config.php');
+    $id=$_GET['id'];
+    $sql="SELECT * FROM cocautochuc where id=$id";
+    $result = mysqli_query($conn, $sql);
+    $row=mysqli_fetch_array($result);
+?>
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Create Teacher</title>
+    <title>Edit Organzation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
       <div class="container " style="justify-content:center;"  >
         <div class="row">
             <div class="col-md-6">
-                <h3 style="text-align:center;">THÊM GIẢNG VIÊN MỚI</h3>
-                <form action="process_create_giangvien.php" method="post">
-                    <div class="form-group">
-                      <label for="">Thêm mới giảng viên</label>
-                    
-                    </div>
+                <h3 style="text-align:center;">SỬA TỔ CHỨC</h3>
+                <form action='process_edit_cocautochuc.php?id=<?php echo $row['id']?>' method="POST" onsubmit="return checked();"name="regform" id="regform">
                     <div class="row">
                          <div class="col-md-4">
-                            <label for="">Ảnh </label>
+                            <label for="">Ảnh</label>
                         </div>
                         <div class="col-md-8">
                             <div class="form-group">
-                      
-                                <input type="text" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Thông tin</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                 <input type="text" name="thongtin" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Tên giảng viên</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                      
-                                <input type="text" name="tengiangvien" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                                 <input type="text" value="<?php  echo $row['image']; ?>" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
                         </div>
                     </div>
@@ -60,24 +39,46 @@
                         </div>
                         <div class="col-md-8">
                             <div class="form-group">
-                                <textarea name="vitri" id="" cols="35" rows="10"></textarea>
-                                <!-- <input type="text" name="vitri" id="" class="form-control" placeholder="" aria-describedby="helpId"> -->
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+                                 <input type="text" value="<?php  echo $row['position']; ?>" name="vitri" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                          <div class="col-md-4">
+                            <label for="">Tên giảng viên</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                 <input type="text" value="<?php  echo $row['name']; ?>" name="tengiangvien" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                         <div class="col-md-4">
+                            <label for="">Thông tin</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                 <input type="text" value ="<?php  echo $row['infor']; ?>" name="thongtin" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                         <div class="col-md-4">
                             <label for="">Nội dung</label>
                         </div>
                         <div class="col-md-8">
                             <div class="form-group">
-                                <textarea name="noidung" id="" cols="35" rows="10"></textarea>
-                                
+                                <!-- <textarea name="noidung" id="" cols="50" rows="10" value ="" ></textarea> -->
+                                <input type="text" value="<?php  echo $row['content']; ?>" name="noidung" id="" class="form-control" placeholder="" aria-describedby="helpId">
                       <!-- <small id="helpId" class="text-muted">Help text</small> -->
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <div class="row">
                          <div class="col-md-4">
                             <!-- <label for="">Dạy môn</label> -->
@@ -85,7 +86,7 @@
                         <div class="col-md-8">
                             <div class="form-group">
                                <input type="submit" value="Lưu lại" class="btn btn-primary"> 
-                               <a href="../bomontrungtam/index_giangvien.php" class="btn btn-primary">Reset</a>
+                               <a href="../gioithieu/index_cocautochuc.php" class="btn btn-primary">Reset</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +98,7 @@
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
   </body>

@@ -31,7 +31,7 @@
                     </li>
                     <li>|</li>
                     <li>
-                        <a href="http://cse.tlu.edu.vn/Register?returnurl=http%3a%2f%2fcse.tlu.edu.vn%2f" class="text-white"> Register</a>
+                        <a href="../3.PROJECT/register.php" class="text-white"> Register</a>
                     </li>
                     <li>|</li>
                         
@@ -47,8 +47,8 @@
             <div class="container" >
                  <div class="header_logo " >
                     <h1>
-                        <a href="../CSE.php" >
-                             <img src="../images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
+                        <a href="../3.PROJECT/CSE.php" >
+                             <img src="images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
                         </a>
                     </h1>
                 </div> 

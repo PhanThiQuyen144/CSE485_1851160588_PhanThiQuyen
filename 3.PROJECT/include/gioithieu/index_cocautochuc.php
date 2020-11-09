@@ -40,7 +40,7 @@
                         <tbody>
                         <tr>
                             <td>
-                                <a href="edit.php?id=<?php echo $row[0]; ?>"><i class="fa fa-pencil mr-2"></i> Edit</a>
+                                <a href="edit_cocautochuc.php?id=<?php echo $row[0]; ?>"><i class="fa fa-pencil mr-2"></i> Edit</a>
                             </td>
                             <td>
                                 <a href="delete_cocautochuc.php?id=<?php echo $row[0]; ?>"><i class="fa fa-trash"></i> Delete</a>

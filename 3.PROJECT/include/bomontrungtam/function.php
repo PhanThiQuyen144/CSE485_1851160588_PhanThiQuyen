@@ -82,14 +82,14 @@
            return FALSE;
        }
     }
-     function getAllKythuattinhtoanvamang(){
+     function getAllKythuatmaytinhvamang(){
         global $conn;
         $sql="SELECT * FROM tinhocvakythuattinhtoan";
         $result= mysqli_query($conn,$sql);
         $teacher =mysqli_fetch_all($result);
         return $teacher;
     }
-     function deleteKythuattinhtoanvamang($id){
+     function deleteKythuatmaytinhvamang($id){
         global $conn;
         $sql = "DELETE FROM tinhocvakythuattinhtoan WHERE id = '$id'";
         $result = mysqli_query($conn, $sql);

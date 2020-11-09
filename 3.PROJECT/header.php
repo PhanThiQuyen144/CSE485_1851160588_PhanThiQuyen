@@ -68,13 +68,8 @@
                 <div class="container" >
                     <div class="header_logo " >
                         <h1>
-<<<<<<< HEAD
                             <a href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/CSE.php" >
                                 <img src="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
-=======
-                            <a href="../3.PROJECT/CSE.php" >
-                                <img src="../../images/logo.jpg" alt="" width="547px"class="img-fluid" height="82px">
->>>>>>> db25f42136712571958ddab6beed95e75465c38a
                             </a>
                         </h1>
                     </div> 

@@ -33,16 +33,16 @@
                     <?php
                          require("../../config.php");
                         include("../bomontrungtam/function.php");
-                        $teacher=getAllKythuattinhtoanvamang();
+                        $teacher=getAllKythuatmaytinhvamang();
                         foreach($teacher as $row){ ?>
 
                         <tbody>
                         <tr>
                             <td>
-                                <a href="edit_kythuattinhtoanvamang.php?id=<?php echo $row[0]; ?>"><i class="fa fa-pencil mr-2"></i> Edit</a>
+                                <a href="edit_kythuatmaytinhvamang.php?id=<?php echo $row[0]; ?>"><i class="fa fa-pencil mr-2"></i> Edit</a>
                             </td>
                             <td>
-                                <a href="delete_kythuattinhtoanvamang.php?id=<?php echo $row[0]; ?>"><i class="fa fa-trash"></i> Delete</a>
+                                <a href="detele_kythuatmaytinhvamang.php?id=<?php echo $row[0]; ?>"><i class="fa fa-trash"></i> Delete</a>
                             </td>
                             <td ><?php  echo $row[1]?></td>
                             <!-- <td> </td> -->

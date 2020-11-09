@@ -34,7 +34,7 @@
                         <div class="col-md-8">
                             <div class="form-group">
                                <input type="submit" value="Lưu lại" class="btn btn-primary"> 
-                               <a href="../../phanquyen1.php" class="btn btn-primary">Reset</a>
+                               <a href="../gioithieu/index_loichaomung.php" class="btn btn-primary">Reset</a>
                             </div>
                         </div>
                     </div>
