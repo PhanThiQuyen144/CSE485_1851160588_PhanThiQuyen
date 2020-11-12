@@ -1,15 +1,15 @@
 <?php   
     
-    require_once('../../config.php');
+    require_once('config.php');
     $id=$_GET['id'];
-    $sql="SELECT * FROM giangvien where id=$id";
+    $sql="SELECT * FROM cse1 where id=$id";
     $result = mysqli_query($conn, $sql);
     $row=mysqli_fetch_array($result);
 ?>
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Edit Teacher</title>
+    <title>Edit Greetings and scientific research</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,24 +20,24 @@
   <body>
       <div class="container " style="justify-content:center;"  >
         <div class="row">
-            <div class="col-md-6">
-                <h3 style="text-align:center;">SỬA GIẢNG VIÊN</h3>
-                <form action='process_edit_giangvien.php?id=<?php echo $row['id']?>' method="POST" onsubmit="return checked();"name="regform" id="regform">
+            <div class="col-md-12">
+                <h3 style="text-align:center;">SỬA NỘI DUNG</h3>
+                <form action='process_edit_cse1.php?id=<?php echo $row['id']?>' method="POST" onsubmit="return checked();"name="regform" id="regform">
                     <div class="row">
-                         <div class="col-md-4">
+                         <div class="col-md-10">
                             <label for="">Ảnh</label>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="form-group">
-                                 <input type="text" value="<?php  echo $row['iamge']; ?>" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                 <input type="text" value="<?php  echo $row['image']; ?>" name="anh" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
                         </div>
                     </div>
                      <div class="row">
-                         <div class="col-md-4">
+                         <div class="col-md-10">
                             <label for="">Thông tin</label>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="form-group">
                                  <input type="text" value ="<?php  echo $row['infor']; ?>" name="thongtin" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
@@ -45,49 +45,38 @@
                     </div>
                     
                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Tên giảng viên</label>
+                         <div class="col-md-10">
+                            <label for=""> Tiêu đề</label>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="form-group">
-                                 <input type="text" value="<?php  echo $row['username']; ?>" name="tengiangvien" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                 <input type="text" value="<?php  echo $row['name']; ?>" name="name" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Vị trí</label>
+                         <div class="col-md-10">
+                            <label for=""> Tiêu đề 1</label>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="form-group">
-                                 <input type="text" value="<?php  echo $row['name']; ?>" name="vitri" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                 <input type="text" value="<?php  echo $row['name1']; ?>" name="name1" id="" class="form-control" placeholder="" aria-describedby="helpId">
                             </div>
                         </div>
                     </div>
 
                    
-                     <div class="row">
-                         <div class="col-md-4">
-                            <label for="">Nội dung</label>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <textarea name="noidung" id="" cols="40" rows="10" value ="" ></textarea>
-                                <input type="text" value="<?php  echo $row['content']; ?>" name="noidung" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                      <!-- <small id="helpId" class="text-muted">Help text</small> -->
-                            </div>
-                        </div>
-                    </div>
+                   
                     
                     
                     <div class="row">
                          <div class="col-md-4">
                             <!-- <label for="">Dạy môn</label> -->
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="form-group">
                                <input type="submit" value="Lưu lại" class="btn btn-primary"> 
-                               <a href="../bomontrungtam/index_giangvien.php" class="btn btn-primary">Reset</a>
+                               <a href="index_cse1.php" class="btn btn-primary">Reset</a>
                             </div>
                         </div>
                     </div>

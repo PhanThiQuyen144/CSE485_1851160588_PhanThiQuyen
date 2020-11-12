@@ -30,15 +30,19 @@
             if(password_verify($password,$password_hash)){?>
                 <script>alert(" chao mung ban den voi CSE")</script>
                 <?php
+                echo("chao mung ban den voi CSE");
                 header(
                     'location: hethong.php');
             //    echo "OK, khớp.";
             }else{
+                  ?>
+                <script>
+                   alert("username hoac mat khau khong dung, moi nhap lai");
                 
-                header('location: Login.php');
-                ?>
-                <script>alert("username hoac mat khau khong dung, moi nhap lai");</script>
+                </script>
                 <?php
+                header('location: Login.php');
+               
                 // echo "Chưa khớp";
             }
         }else{
@@ -48,5 +52,6 @@
     }else{
         // Co loi, hien thi lai loi cho nguoi dung biet
         echo "Co loi nhap lieu ...";
+        header( 'location: Login.php');
     }
 ?>

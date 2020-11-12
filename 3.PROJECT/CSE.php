@@ -40,6 +40,7 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="15"class="pt-1"></li>
                                     </ol>
                                     <div class="carousel-inner "   >
+                                        
                                         <div class="carousel-item active "  >
                                             <a href=""> <img src="../3.PROJECT/images/khai-truong.jpg" class="d-block w-100" alt="..."></a>
                                         </div>
@@ -112,8 +113,35 @@
                             <div class="container">
                                 <div class="row" style="padding-left: 5px;">
                                     <div class="col-lg-4 img" >
+                                        <?php 
+                                require("config.php");
+                                $sql = "SELECT * FROM cse1";
+                                mysqli_set_charset($conn,'UTF8');
+                                $result = mysqli_query($conn,$sql);
+                                // 3. Xu ly ket qua
+                                while($row = mysqli_fetch_assoc($result)){ ?>
                                         <div >
-                                            <div class="news-grid-left-img " style="background: url(../3.PROJECT/images/cse-hallthumb.jpg);background-position: center;background-size: cover;padding: 4.5em 0;">
+                                            <div class="news-grid-left-img " style="background: url(<?php  echo $row['image']?>);background-position: center;background-size: cover;padding: 4.5em 0;">
+                                                <h6 >
+                                                    <a  href="<?php echo $row['infor']?> " >
+                                                        <?php echo $row['name']?> 
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                            <div class="news-grid-left-info">
+                                                <h5>
+                                                    <a href="<?php echo $row['infor']?> ">
+                                                        <?php echo $row['name1']?> 
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                  
+                                <?php 
+                                }
+                                ?>  
+                                         <div >
+                                            <!-- <div class="news-grid-left-img " style="background: url(../3.PROJECT/images/cse-hallthumb.jpg);background-position: center;background-size: cover;padding: 4.5em 0;">
                                                 <h6 >
                                                     <a  href="../3.PROJECT/include/gioithieu/loichaomung.php" >
                                                         LỜI CHÀO MỪNG
@@ -142,7 +170,7 @@
                                                         <a href="nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a>
                                                     </h5>
                                                 </div>
-                                            </div>
+                                            </div> --> 
                                         </div>
                                     </div>
                                     <div class="col-lg-4 img" >

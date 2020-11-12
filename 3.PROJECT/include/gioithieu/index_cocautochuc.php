@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
       <div class="container">
             <div class="row">
+                <div class="col-md-1">
+                     <img src="../../images/logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12 mb-3">
+                   
                     <h3 style="text-align:center;">Lời chào mừng</h3>
                 </div>
             </div>   
@@ -40,10 +46,10 @@
                         <tbody>
                         <tr>
                             <td>
-                                <a href="edit_cocautochuc.php?id=<?php echo $row[0]; ?>"><i class="fa fa-pencil mr-2"></i> Edit</a>
+                                <a href="edit_cocautochuc.php?id=<?php echo $row[0]; ?>" ><i class="fa fa-pencil mr-2"></i> Edit</a>
                             </td>
                             <td>
-                                <a href="delete_cocautochuc.php?id=<?php echo $row[0]; ?>"><i class="fa fa-trash"></i> Delete</a>
+                                <a href="delete_cocautochuc.php?id=<?php echo $row[0]; ?>" class="delete"><i class="fa fa-trash" class="delete"></i> Delete</a>
                             </td>
                             <td ><img src="<?php echo $row[1] ?>" alt="" clas="img-fluid" style="max-width:100px"></td>
                             <td><?php echo $row[2] ?></td>
@@ -67,9 +73,10 @@
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="../../js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../../js/popper.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
+     <script src="../../js/script.js"></script>
   </body>
 </html>
