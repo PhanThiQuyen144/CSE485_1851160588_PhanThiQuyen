@@ -174,7 +174,34 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 img" >
-                                        <div>
+                                    <?php 
+                                require("config.php");
+                                $sql = "SELECT * FROM cse2";
+                                mysqli_set_charset($conn,'UTF8');
+                                $result = mysqli_query($conn,$sql);
+                                // 3. Xu ly ket qua
+                                while($row = mysqli_fetch_assoc($result)){ ?>
+                                        <div >
+                                            <div class="news-grid-left-img " style="background: url(<?php  echo $row['image']?>);background-position: center;background-size: cover;padding: 4.5em 0;">
+                                                <h6 >
+                                                    <a  href="<?php echo $row['infor']?> " >
+                                                        <?php echo $row['name']?> 
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                            <div class="news-grid-left-info">
+                                                <h5>
+                                                    <a href="<?php echo $row['infor']?> ">
+                                                        <?php echo $row['name1']?> 
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                  
+                                <?php 
+                                }
+                                ?> 
+                                        <!-- <div>
                                             <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/gv-khoa-cnttthumb.jpg);background-position: center;background-size: cover; padding: 4.5em 0;">
                                                 <h6>
                                                     <a  href="../3.PROJECT/include/bomontrungtam/giangvien.php">
@@ -194,7 +221,7 @@
                                             <div style="padding-top:25px">
                                                 <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/K54tn.PNG);background-position: center; background-size: cover;padding: 4.5em 0;">
                                                     <h6>
-                                                        <a href="dao-tao.php">
+                                                        <a href="include/daotao/daotao.php">
                                                             ĐÀO TẠO
                                                         </a>
                                                     </h6>
@@ -205,7 +232,7 @@
                                                     </h5>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="col-lg-4 img" >
                                         <div>
