@@ -25,6 +25,32 @@
         $teacher = mysqli_fetch_all($result);
         return $teacher;
     }
+    function getAllCSE1(){
+        global $conn;
+        $sql="SELECT * FROM cse1";
+        $result= mysqli_query($conn,$sql);
+        $teacher =mysqli_fetch_all($result);
+        return $teacher;
+    }
+      function editCSE1($id){
+        global $conn;
+        $sql = "SELECT * FROM cse1 WHERE id = '$id'";
+        $result = mysqli_query($conn, $sql);
+        $teacher = mysqli_fetch_all($result);
+        return $teacher;
+    }
+      function deletecse1($id){
+        global $conn;
+        $sql = "DELETE FROM cse1 WHERE id = '$id'";
+        $result = mysqli_query($conn, $sql);
+       if($result){
+           return TRUE;
+
+       }
+       else{
+           return FALSE;
+       }
+    }
     
 
 ?>
