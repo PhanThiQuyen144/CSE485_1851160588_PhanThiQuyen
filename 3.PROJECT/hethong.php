@@ -99,7 +99,7 @@
 						</select>
 					</div>		
 					<!-- <div class="value"><input type="text" name="code" size="20"></div>					 -->
-					<div class="label">Nhóm quyền</div>
+					<!-- <div class="label">Nhóm quyền</div>
 					<div class="value">
 						<select>
 							<option selected="selected"></option>
@@ -107,8 +107,8 @@
 							<option>Quản lý đào tạo</option>
 							<option>Quản lý tài chính</option>							
 						</select>
-					</div>					
-					<div class="search"><input type="button" value="Tìm" name="search"></div>
+					</div>					 -->
+					<div class="search"><input type="button" value="Tìm" name="search"m id= "txtbutton"></div>
 				</div>
 			  <div class="list-course">
 					<table class="list-course" bgcolor="#FFFFFF">
@@ -150,18 +150,14 @@
 						<?php
 						}
 						?>
-						<!-- <tr>
-							<td width="10"><input type="checkbox"></td>
-							<td><a href="suauser.html"><img src="images/edit.gif" border="0"></a></td>
-							<td><a href="#"><img src="images/deleted.jpg" border="0"></a></td>
-							<td >admin</td>
-							<td >Triệu Kim Cúc</td>
-							<td>1851160589@e.tlu.edu.vn</td>
-							<td>09759755555</td>
-							<td>admin</td>
-						</tr> -->
+					
 						
 					</table>
+				 	<table>
+						<tr id ="staff">
+							
+						</tr>
+				 	</table>
 					<div class="task"><a href="../3.PROJECT/register.php"><input type="button" value="Thêm mới" name="Thêm mới"></a>
 									<!-- <a href="delete.php?id=<?php echo $row["id"]?>"> <input type="button" name="Xóa" value="Xóa"> </a> 
 									<a href="edit.php?id=<?php echo $row["id"]?>"><input type="button" name="Cập nhật" value="Cập nhật"></a> -->
@@ -204,10 +200,11 @@
 
 </div>
 
-	<script src="../js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	 <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
+	 <script src="../3.PROJECT/js/script.js"></script>
 
 </body>
 </html>
