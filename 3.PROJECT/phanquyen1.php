@@ -143,7 +143,7 @@
 							        <td> Quan ly He thong thong tin</td>
 							        <td><a href="../3.PROJECT/include/bomontrungtam/hethongthongtin.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
 							        <td><a href="../3.PROJECT/include/bomontrungtam/create_hethongthongtin.php"> <i class="fas fa-calendar-plus"></i>Thêm </a></td>
-							        <td><a href="../3.PROJECT/include/bomontrungtam/index_hehtongthongtin.php"><i class="far fa-edit"></i> Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/bomontrungtam/index_hethongthongtin.php"><i class="far fa-edit"></i> Sửa</a></td>
 							        <td><a href="../3.PROJECT/include/bomontrungtam/delete_hethongthongtin.php"><i class="fas fa-trash-alt"></i>Xóa </a></td>
                                 </tr>
 								<tr>
@@ -187,6 +187,7 @@
 							        <td><a href="../3.PROJECT/include/daotao/edit_daotao.php"><i class="fas fa-trash-alt"></i>Edit</a></td>
 							        <td><a href="../3.PROJECT/include/daotao/delete_daotao.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
                                 </tr>
+								
                                 
                             <?php 
                                 }
