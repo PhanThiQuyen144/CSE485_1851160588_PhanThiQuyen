@@ -35,8 +35,12 @@
 			<!-- <li class=""><a href="khoahoc.html" class="menu-item0" id="menu1" title="Home"><span class="menu-title">QL Khóa học</span></a></li> 
 			<li class=""><a href="dangki.html" class="menu-item1" id="menu82" title="Job Board Features"><span class="menu-title">QL Đăng ký</span></a></li> 
 			<li class=""><a href="dshocvien.html" class="menu-item2" id="menu83" title="FAQs"><span class="menu-title">QL Học viên</span></a></li> 
-			<li class=""><a href="lapdanhsachthi.html" class="menu-item3" id="menu85" title="Forums"><span class="menu-title">QL Thi</span></a></li> 
-			<li class=""><a href="thongke.html" id="menu86" title="Documentation (Beta)"><span class="menu-title">Thống kê</span></a></li>  -->
+			<li class=""><a href="lapdanhsachthi.html" class="menu-item3" id="menu85" title="Forums"><span class="menu-title">QL Thi</span></a></li> -->
+			<!-- <li class=""><a href="report.php" class="menu-item3" id="menu85" title="Forums"><span class="menu-title">Đăng bài</span></a></li>  
+			<li class="active"><a href="hethong.php" class="active" id="menu86 active first-item" title="Documentation (Beta)"><span class="menu-title">Hệ thống</span></a></li> 
+			<li class=""><a href="#" id="menu86" title="Documentation (Beta)"><span class="menu-title">Đăng xuất</span></a></li>  -->
+			
+			<li class=""><a href="report.php" id="menu86" title="Documentation (Beta)"><span class="menu-title">Đăng bài</span></a></li> 
 			<li class="active"><a href="hethong.php" class="active" id="menu86 active first-item" title="Documentation (Beta)"><span class="menu-title">Hệ thống</span></a></li> 
 			<li class=""><a href="#" id="menu86" title="Documentation (Beta)"><span class="menu-title">Đăng xuất</span></a></li> 
 		</ul>
@@ -145,8 +149,8 @@
 	<div class="moduletable_menu">
 		<h3>Main Menu</h3>
 			<ul class="menu">
-			<li id="current" class="active item1"><a href="user.html">Quản trị người sử dụng</a></li>
-			<li class="item82"><a href="phanquyen1.php">Quản trị bài viết</a></li>
+			<li id="current" class="active item1"><a href="hethong.php">Quản trị người sử dụng</a></li>
+			<!-- <li class="item82"><a href="phanquyen1.php">Quản trị bài viết</a></li> -->
 			<li class="item83"><a href="log.html">Quản lý log</a></li>
 			<li class="item85"><a href="dsmonhoc.html"><a href="changepass.html">Đổi mật khẩu</a></li>			
 			</ul>		
