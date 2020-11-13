@@ -182,10 +182,19 @@
 								<tr>
                                     <td><?php echo $row['username'] ?> </td>
 							        <td> Quan ly dao tao </td>
-							        <td><a href="../3.PROJECT/include/daotao/daotao.php"><i class="fa fa-street-view" aria-hidden="true"></i>View</a></td>
-							        <td><a href="../3.PROJECT/include/daotao/create_daotao.php"> <i class="fas fa-calendar-plus"></i>Create</a></td>
-							        <td><a href="../3.PROJECT/include/daotao/edit_daotao.php"><i class="fas fa-trash-alt"></i>Edit</a></td>
-							        <td><a href="../3.PROJECT/include/daotao/delete_daotao.php"><i class="fas fa-trash-alt"></i>Delete</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/index_daotao.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/create_daotao.php"> <i class="fas fa-calendar-plus"></i>Thêm</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/index_daotao.php"><i class="far fa-edit"></i>Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/daotao/index_daotao.php"><i class="fas fa-trash-alt"></i>Xóa</a></td>
+                                </tr>
+								<tr>
+                                    <td><?php echo $row['username'] ?> </td>
+							        <td> Quan ly thong bao </td>
+							        <td><a href="../3.PROJECT/include/thongbao/index_tb.php"><i class="fa fa-street-view" aria-hidden="true"></i>Xem</a></td>
+							        <td><a href="../3.PROJECT/include/thongbao/create_thongbao.php"> <i class="fas fa-calendar-plus"></i>Thêm</a></td>
+							        <td><a href="../3.PROJECT/include/thongbao/index_tb.php"><i class="far fa-edit"></i>Sửa</a></td>
+							        <td><a href="../3.PROJECT/include/thongbao/index_tb.php"><i class="fas fa-trash-alt"></i>Xóa</a></td>
+
                                 </tr>
 								
                                 

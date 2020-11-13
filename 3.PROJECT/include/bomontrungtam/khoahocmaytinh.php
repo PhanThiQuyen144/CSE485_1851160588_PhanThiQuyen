@@ -83,7 +83,7 @@
                            <div class="collapse navbar-collapse" id="collapsibleNavId">
                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                    <li class="nav-item dropdown ">
-                                        <a class="homesp navbar-brand" href="CSE.php">TRANG CHỦ</a>
+                                        <a class="homesp navbar-brand" href="http://localhost:81/CSE485_1851160588_PhanThiQuyen/3.PROJECT/CSE.php">TRANG CHỦ</a>
                                    </li>
                                </ul>
                            </div>
@@ -393,14 +393,14 @@
                           <li><a class="ui-link-white" href="../gioithieu/hoptacquocte.php">Hợp tác liên kết</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao">Đào tạo</a></li>
+                          <li><a class="ui-link-white" href="../daotao/daotao.php">Đào tạo</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/mo-hinh-dao-tao">Mô hình đào tạo</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-dai-hoc-chinh-quy">Đào tạo đại học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-tien-si">Định hướng ngành nghề</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-sau-dai-hoc">Đào tạo sau đại học</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/khoa-hoc-cong-nghe">Nghiên cứu khoa học</a></li>
+                          <li><a class="ui-link-white" href="../nghiencuukhoahoc/nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/thong-tin-seminar">Thông tin seminar</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-de-tai-du-an">Các đề tài, dự án</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-cong-trinh-cong-bo">Công trình công bố</a></li>
@@ -439,5 +439,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
      <!-- <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script> -->
+     <script src="../../js/script.js"></script>
     </body>
 </html>

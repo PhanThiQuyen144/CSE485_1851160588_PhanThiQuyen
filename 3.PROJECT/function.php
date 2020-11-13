@@ -51,6 +51,32 @@
            return FALSE;
        }
     }
+    function getAllCSE2(){
+        global $conn;
+        $sql="SELECT * FROM cse2";
+        $result= mysqli_query($conn,$sql);
+        $teacher =mysqli_fetch_all($result);
+        return $teacher;
+    }
+      function editCSE2($id){
+        global $conn;
+        $sql = "SELECT * FROM cse2 WHERE id = '$id'";
+        $result = mysqli_query($conn, $sql);
+        $teacher = mysqli_fetch_all($result);
+        return $teacher;
+    }
+      function deletecse2($id){
+        global $conn;
+        $sql = "DELETE FROM cse2 WHERE id = '$id'";
+        $result = mysqli_query($conn, $sql);
+       if($result){
+           return TRUE;
+
+       }
+       else{
+           return FALSE;
+       }
+    }
     
 
 ?>

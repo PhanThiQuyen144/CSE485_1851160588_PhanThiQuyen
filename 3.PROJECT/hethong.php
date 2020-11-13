@@ -67,7 +67,34 @@
 	<div class="title-module">DANH SÁCH NGƯỜI SỬ DỤNG</div>
 				<div class="filter">
 					<div class="label">Tên đăng nhập</div>
-					<div class="value"><input type="text" name="code" size="20"></div>					
+					<div class="value">
+						<select id="department">
+							<option selected="selected"></option>
+							  <?php
+                    // require("config.php");
+                    // 2. Khai bao truy van
+                    
+                     $host = 'localhost';
+    						$user = 'root';
+    						$pass = '';
+    						$db   = 'cse';
+    						$conn = mysqli_connect($host,$user,$pass, $db);
+    						if(!$conn){
+        					die("Không thể kết nối");
+							}
+                
+                    $sql = "SELECT * FROM cse";
+                    mysqli_set_charset($conn,'UTF8');
+                    $result = mysqli_query($conn,$sql);
+                    // 3. Xu ly ket qua
+                    while($row = mysqli_fetch_assoc($result)){
+                        echo "<option value='".$row['id']."' >".$row['username']."</option>";
+                    }
+
+                    ?>							
+						</select>
+					</div>		
+					<!-- <div class="value"><input type="text" name="code" size="20"></div>					 -->
 					<div class="label">Nhóm quyền</div>
 					<div class="value">
 						<select>

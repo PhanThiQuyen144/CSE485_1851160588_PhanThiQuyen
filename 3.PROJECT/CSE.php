@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -455,7 +456,34 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 img" >
-                                        <div>
+                                          <?php 
+                                require("config.php");
+                                $sql = "SELECT * FROM cse2";
+                                mysqli_set_charset($conn,'UTF8');
+                                $result = mysqli_query($conn,$sql);
+                                // 3. Xu ly ket qua
+                                while($row = mysqli_fetch_assoc($result)){ ?>
+                                        <div >
+                                            <div class="news-grid-left-img " style="background: url(<?php  echo $row['image']?>);background-position: center;background-size: cover;padding: 4.5em 0;">
+                                                <h6 >
+                                                    <a  href="<?php echo $row['infor']?> " >
+                                                        <?php echo $row['name']?> 
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                            <div class="news-grid-left-info">
+                                                <h5>
+                                                    <a href="<?php echo $row['infor']?> ">
+                                                        <?php echo $row['name1']?> 
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                  
+                                <?php 
+                                }
+                                ?>
+                                        <!-- <div>
                                             <div class="news-grid-left-img" style="background: url(../3.PROJECT/images/gv-khoa-cnttthumb.jpg);background-position: center;background-size: cover; padding: 4.5em 0;">
                                                 <h6>
                                                     <a  href="../3.PROJECT/include/bomontrungtam/giangvien.php">
@@ -486,7 +514,8 @@
                                                     </h5>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                        
                                     </div>
                                     <div class="col-lg-4 img" >
                                         <div>
@@ -537,13 +566,13 @@
                         </ul>
                         <ul class="nav-footer-link">
                           <li><a class="ui-link-white" href="dao-tao.php">Đào tạo</a></li>
-                          <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/mo-hinh-dao-tao">Mô hình đào tạo</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/daotao/daotao.php">Mô hình đào tạo</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-dai-hoc-chinh-quy">Đào tạo đại học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-tien-si">Định hướng ngành nghề</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/dao-tao-sau-dai-hoc">Đào tạo sau đại học</a></li>
                         </ul>
                         <ul class="nav-footer-link">
-                          <li><a class="ui-link-white" href="nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a></li>
+                          <li><a class="ui-link-white" href="../3.PROJECT/include/nghiencuukhoahoc/nghien_cuu_khoa_hoc.php">Nghiên cứu khoa học</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/thong-tin-seminar">Thông tin seminar</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-de-tai-du-an">Các đề tài, dự án</a></li>
                           <li><a class="ui-link-white" href="http://cse.tlu.edu.vn/cac-cong-trinh-cong-bo">Công trình công bố</a></li>
@@ -584,4 +613,3 @@
      <script src="https://kit.fontawesome.com/3ff58b9e8a.js" crossorigin="anonymous"></script>
      <!-- <script src="CSE.js"></script> -->
    </body>
-</html>
