@@ -31,26 +31,10 @@
                             $result = mysqli_query($conn,$sql);
                             // 3. Xu ly ket qua
                             while($row = mysqli_fetch_assoc($result)){?>
-                            <p style="color=#000000 font-size: 30px;" ><strong style=" font-size: 18px;"><?php echo $row['id'].$row['name'] ?></strong> </p>
+                            <p style="color=#000000 font-size: 30px;" ><strong style=" font-size: 18px;"><?php echo $row['name'] ?></strong> </p>
                             <ul><li>
                             <?php
-                            // if(isset($_POST['id'])){
-                            //     $id = $_POST['id'];
-                            // }
-                            require('../../config.php');
-                            // 2. Khai bao Truy van
-                            $sql = "SELECT * FROM subngckh WHERE id = '$id'";
-                            mysqli_set_charset($conn,'UTF8');
-                            $result = mysqli_query($conn,$sql);
-                            $users_arr = array();
-                            while($row = mysqli_fetch_assoc($result)){
-                                echo $row['conten'];
-                                // $userid = $row['id'];
-                                // $name = $row['name'];
-                        
-                                // $users_arr[] = array("id" => $userid, "name" => $name);
-                            }
-                            // echo json_encode($users_arr);
+                            
                             ?>
                             </li></ul>
                         <?php
